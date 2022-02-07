@@ -24,6 +24,9 @@ BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
 sleep 3
 BP=$BP&&export BP=$BP >> $HOME/.bash_profile&&source ~/.bash_profile
 sleep 3
+export BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
+
+
 
 wget -O minima_cleanup_v98.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_cleanup_v98.sh && chmod +x minima_cleanup_v98.sh && sudo ./minima_cleanup_v98.sh
 wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9002 -p 9001
