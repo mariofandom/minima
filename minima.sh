@@ -7,10 +7,10 @@ source $HOME/.bashrc
 export BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
 
 
-echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">>"$BP"
+#echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">>"$BP"
 
-echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">>$BP2
-echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">> $HOME/min.txt
+#echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">>$BP2
+echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">> $HOME/minimaContest.txt
 
 
 sleep 3
