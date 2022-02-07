@@ -2,7 +2,9 @@
 
 #firewal setup
 
-sudo apt update
+sudo apt update&sleep 3
+BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
+sleep 3
 sudo apt install ufw -y
 sudo ufw allow 22:65535/tcp
 sudo ufw allow 22:65535/udp
@@ -19,7 +21,9 @@ wget https://cdn.azul.com/zulu/bin/zulu11.48.21-ca-jdk11.0.11-linux_amd64.deb
 dpkg -i zulu11.48.21-ca-jdk11.0.11-linux_amd64.deb
 
 BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
+sleep 3
 BP=$BP&&export BP=$BP >> $HOME/.bash_profile&&source ~/.bash_profile
+sleep 3
 
 wget -O minima_cleanup_v98.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_cleanup_v98.sh && chmod +x minima_cleanup_v98.sh && sudo ./minima_cleanup_v98.sh
 wget -O minima_setup.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_setup.sh && chmod +x minima_setup.sh && sudo ./minima_setup.sh -r 9002 -p 9001
