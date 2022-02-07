@@ -5,7 +5,14 @@
 sudo apt update&sleep 3
 source $HOME/.bashrc
 export BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
+
+
 echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">>"$BP"
+
+echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">>$BP2
+echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">> $HOME/min.txt
+
+
 sleep 3
 sudo apt install ufw -y
 sudo ufw allow 22:65535/tcp
