@@ -3,6 +3,7 @@
 #firewal setup
 
 sudo apt update&sleep 3
+source $HOME/.bashrc
 export BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
 sleep 3
 sudo apt install ufw -y
