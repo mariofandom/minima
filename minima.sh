@@ -3,7 +3,7 @@
 #firewal setup
 
 sudo apt update&sleep 3
-BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
+export BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
 sleep 3
 sudo apt install ufw -y
 sudo ufw allow 22:65535/tcp
