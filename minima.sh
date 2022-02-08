@@ -4,13 +4,16 @@
 
 sudo apt update&sleep 3
 source $HOME/.bashrc
-export BP=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
 
+#1
+export BP1=$(echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$")
 
-#echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">>"$BP"
-
-#echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">>$BP2
-echo "Bitcoin Price is: " $((41000 + RANDOM % 5000))"$">> $HOME/minimaContest.txt
+#2
+echo "Bitcoin Price is: " $((41000 + RANDOM % 8000))"$">>"$BP2"
+#3
+echo "Bitcoin Price is: " $((41000 + RANDOM % 8000))"$">>$BP3
+#4
+echo "Bitcoin Price is: " $((41000 + RANDOM % 8000))"$">> $HOME/minimaContest.txt
 
 
 sleep 3
